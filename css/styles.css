@@ -1,5 +1,9 @@
 /* Tshirts Day 4 Wknd Homework */
 
+body {
+    margin: 0;
+}
+
 ul {
     list-style: none;
 }
