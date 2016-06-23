@@ -8,6 +8,7 @@
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 /* starting content */
@@ -15,9 +16,7 @@ ul {
     position: relative;
     width: 30%;
     float: left;
-    border: 2px solid #61a0da;
-    margin-right: 1.5em;
-    margin-top: 1em;
+
 }
 
 .info {
@@ -30,4 +29,22 @@ ul .info {
 /* Tshirt section */
 .tshirts img {
     width: 100%;
+    padding: .1em;
+}
+
+.info li > img {
+    border: 2px solid #61a0da;
+}
+
+/* ICON section */
+.icon-row {
+
+}
+
+.icon-row li {
+    float: left;
+    border: 2px solid #61a0da;
+    width: 20%;
+    text-align: center;
+    box-sizing: border-box;
 }
