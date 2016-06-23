@@ -1,9 +1,32 @@
 /* Tshirts Day 4 Wknd Homework */
 
-body {
-    margin: 0;
+/* general */
+.tshirts-index {
+    width: 100%;
+    margin: 0 auto;
 }
 
 ul {
     list-style: none;
+}
+
+/* starting content */
+.tshirts {
+    position: relative;
+    width: 30%;
+    float: left;
+    border: 2px solid #61a0da;
+    margin-right: 1.5em;
+}
+
+.info {
+    margin: 1em;
+}
+ul .info {
+    padding: 0;
+}
+
+/* Tshirt section */
+.tshirts img {
+    width: 100%;
 }
