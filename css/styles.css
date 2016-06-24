@@ -11,12 +11,12 @@ ul {
     padding: 0;
 }
 
+
 /* starting content */
 .tshirts {
     position: relative;
     width: 30%;
     float: left;
-
 }
 
 .info {
@@ -43,8 +43,25 @@ ul .info {
 
 .icon-row li {
     float: left;
-    border: 2px solid #61a0da;
     width: 20%;
+    margin-top: 0;
+    color: #61a0da;
+    font-size: 1.5em;
+    padding: 15px 20px 15px 20px;
     text-align: center;
     box-sizing: border-box;
+    border: 2px solid #61a0da;
+}
+
+.size-icon {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Icon Boxes */
+
+.blue-box {
+    width: 1.1em;
+    height: 1.1em;
+    background-color: #769dd1;
 }
