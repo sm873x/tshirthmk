@@ -6,3 +6,19 @@ body {
     font-family: 'Open Sans', 'san-serif';
     color: #72bae7;
 }
+
+ul {
+    list-style: none;
+}
+
+/*main level*/
+main {
+    width: 100%;
+
+}
+
+article {
+    width: 33%;
+    float: left;
+}
+/*article level*/
