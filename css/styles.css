@@ -21,12 +21,17 @@ article {
     margin: 1em;
 }
 
+.tshirt-image {
+    padding: 1.5em;
+    border: 1px solid #72bae7;
+    border-bottom: none;
+}
+
 ul.options {
     margin: 0;
     width: 100%;
     padding: 0;
 }
-
 
 .options > li {
     float: left;
@@ -36,21 +41,30 @@ ul.options {
     font-size: 2em;
     text-align: center;
     border: 1px solid #72bae7;
-    margin-bottom: 20px;
     box-sizing: border-box;
 }
 
-.tshirt-image {
-    padding: 1.5em;
-    border: 1px solid #72bae7;
-    border-bottom: none;
+.flip {
+    position: relative;
+    left: 80%;
+    bottom: 14.3em;
+}
+
+li.flip {
+    border-top: none;
+    padding: 0;
+    margin:0;
 }
 
 .tshirt-descriptions {
     padding: 0;
+    margin: 0;
+    bottom: 1.2em;
+    position: relative;
 }
 .name {
     float: left;
+    clear: both;
     font-size: 1.5em;
 }
 
