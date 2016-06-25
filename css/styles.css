@@ -23,7 +23,7 @@ article {
 
 .tshirt-image {
     padding: 1.5em;
-    border: 1px solid #72bae7;
+    border: 3px solid #72bae7;
     border-bottom: none;
 }
 
@@ -37,16 +37,16 @@ ul.options {
     float: left;
     width: 20%;
     height: auto;
-    padding: 5px;
-    font-size: 2em;
+    padding: 10px 15px 15px 10px;
+    font-size: 1.6em;
     text-align: center;
-    border: 1px solid #72bae7;
+    border: 3px solid #72bae7;
     box-sizing: border-box;
 }
 
 .flip {
     position: relative;
-    bottom: 14.3em;
+    bottom: 18.2em;
 }
 
 li.flip {
@@ -74,57 +74,11 @@ li.flip {
     font-size: 1.5em;
     font-weight: bold;
 }
-/*main level*/
-/*main {
-    width: 100%;
-    margin: 2em;
+
+
+
+
+/*Take away double borders*/
+li.refresh, li.heart, li.size, li.color {
+    border-right: none;
 }
-
-article {
-    position: relative;
-    max-width: 33%;
-    float: left;
-    margin-right: 1em;
-}*/
-/*article level*/
-
-/*.tshirt-image {
-    position: relative;
-    padding: 1.5em;
-    border: 1px solid #72bae7;
-    box-sizing: border-box;
-    border-bottom: transparent;
-}*/
-
-/*section levels*/
-
-/*nav {
-    margin: 0;
-}
-ul.options {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-}
-
-.options > li {
-    display: inline-block;
-    width: 20%;
-    height: 3em;
-    margin: 0;
-    border: 1px solid #72bae7;
-}
-
-.tshirt-descriptions li {
-    display: inline-block;
-}*/
-
-
-/* animation menu section*/
-/*.color-index {
-    margin: 0;
-    padding: 0;
-}
-.color-index li {
-        position: absolute;
-}*/
