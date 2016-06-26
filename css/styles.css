@@ -140,7 +140,7 @@ ul.size-choices {
 }
 
 .size:hover > .size-choices {
-    animation: menu linear 0.5s;
+    animation: menu linear 0.3s;
     animation-fill-mode: forwards;
 }
 
@@ -203,7 +203,7 @@ ul.color-index {
 }
 
 .color:hover > .color-index {
-    animation: menu linear 0.5s;
+    animation: menu linear 0.3s;
     animation-fill-mode: forwards;
 }
 
