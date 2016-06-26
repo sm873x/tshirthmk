@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Open Sans', 'san-serif';
-    color: #72bae7;
+    color: #5CA4D7;
 }
 
 ul {
@@ -23,7 +23,7 @@ article {
 
 .tshirt-image {
     padding: 1.5em;
-    border: 3px solid #72bae7;
+    border: 3px solid #5CA4D7;
     border-bottom: none;
 }
 
@@ -40,7 +40,7 @@ ul.options {
     padding: 10px 15px 15px 10px;
     font-size: 1.6em;
     text-align: center;
-    border: 3px solid #72bae7;
+    border: 3px solid #5CA4D7;
     box-sizing: border-box;
 }
 
@@ -71,7 +71,7 @@ li.flip {
 
 .price {
     float: right;
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-weight: bold;
 }
 
