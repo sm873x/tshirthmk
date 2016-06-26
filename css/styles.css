@@ -76,7 +76,36 @@ li.flip {
 }
 
 
+/* Nav Option CSS Color Box*/
+.blue-box {
+    position: relative;
+    width: 1.2em;
+    height: 1.2em;
+    left: 22%;
+    padding: 5%;
+    background-color: #7FBAE2;
+    margin: 0;
+}
 
+.pink-box {
+    position: relative;
+    width: 1.2em;
+    height: 1.2em;
+    left: 22%;
+    padding: 5%;
+    background-color: #D482AA;
+    margin: 0;
+}
+
+.yellow-box {
+    position: relative;
+    width: 1.2em;
+    height: 1.2em;
+    left: 22%;
+    padding: 5%;
+    background-color: #DAAE7B;
+    margin: 0;
+}
 
 /*Take away double borders*/
 li.refresh, li.heart, li.size, li.color {
