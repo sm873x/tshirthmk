@@ -180,6 +180,10 @@ li.s {
     font-size: 50%;
 }
 
+ul.size-choices > li:active {
+    background: #afd6f6;
+}
+
 /* Color menu and animations */
 li.color {
     position: relative;
@@ -258,6 +262,10 @@ li.color-green {
     width: 1.3em;
     height: 1.1em;
     background-color: #50a169;
+}
+
+ul.color > li:active {
+    background: #afd6f6;
 }
 /* Menu animations keyframes */
 @keyframes menu {
