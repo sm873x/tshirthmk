@@ -75,36 +75,44 @@ li.flip {
     font-weight: bold;
 }
 
+/* Nav Option Hover */
+.options > li:hover{
+    background-color: #5CA4D7;
+    color: white;
+}
 
 /* Nav Option CSS Color Box*/
 .blue-box {
     position: relative;
-    width: 1.2em;
-    height: 1.2em;
+    width: 1.3em;
+    height: 1.3em;
     left: 22%;
-    padding: 5%;
+    padding: 0;
     background-color: #7FBAE2;
     margin: 0;
+    border: 2.5px solid #fff;
 }
 
 .pink-box {
     position: relative;
-    width: 1.2em;
-    height: 1.2em;
+    width: 1.3em;
+    height: 1.3em;
     left: 22%;
-    padding: 5%;
+    padding: 0;
     background-color: #D482AA;
     margin: 0;
+    border: 2.5px solid #fff;
 }
 
 .yellow-box {
     position: relative;
-    width: 1.2em;
-    height: 1.2em;
+    width: 1.3em;
+    height: 1.3em;
     left: 22%;
-    padding: 5%;
+    padding: 0;
     background-color: #DAAE7B;
     margin: 0;
+    border: 2.5px solid #fff;
 }
 
 /*Take away double borders*/
