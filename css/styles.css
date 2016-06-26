@@ -125,13 +125,8 @@ li.size {
     position: relative;
 }
 
-.size-choices ul:hover{
-    visibility: visible;
-    animation-name: menu;
-}
-
 ul.size-choices {
-    visibility: hidden;
+    opacity: 0;
     position: absolute;
     text-align: center;
     padding: 0 0.7em;
@@ -142,6 +137,11 @@ ul.size-choices {
     font-weight: bold;
     font-size: 1.5em;
     color: #5CA4D7;
+}
+
+.size:hover > .size-choices {
+    animation: menu linear 0.5s;
+    animation-fill-mode: forwards;
 }
 
 ul.size-choices:after, ul.size-choices:before {
@@ -184,24 +184,23 @@ li.s {
 @keyframes menu {
     0% {
         opacity: 0;
+        top: -5.2em;
     }
 
     20% {
-        opacity: 20%;
+        opacity: 0.2;
+        top: -5.0em;
     }
 
     40% {
-        opacity: 40%;
-    }
-
-    60% {
-        opacity: 60%;
+        opacity: 0.4;
     }
 
     80% {
-        opacity: 80%;
+        opacity: 0.8;
     }
+
     100% {
-        opacity: 100%;
+        opacity: 1;
     }
 }
