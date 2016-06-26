@@ -121,12 +121,16 @@ li.refresh, li.heart, li.size, li.color {
 }
 
 /* Size menu and animation */
+li.size {
+    position: relative;
+}
+
 ul.size-choices {
     position: absolute;
     text-align: center;
-    padding:0.5em 1.7em 0.5em 1.7em;
-    top: 9.6em;
-    left: 6.3em;
+    padding: 0 0.7em;
+    top: -4.4em;
+    left: -0.4em;
     border: 3px solid #5CA4D7;
     background-color: #fff;
     font-weight: bold;
@@ -134,24 +138,28 @@ ul.size-choices {
     color: #5CA4D7;
 }
 
-.triangle-down {
-    width: 10%;
-    height: 0;
-    padding-left:10%;
-    padding-top: 10%;
-    overflow: hidden;
+ul.size-choices:after, ul.size-choices:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
 }
-.triangle-down:after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    margin-left:-500px;
-    margin-top:-500px;
 
-    border-left: 500px solid transparent;
-    border-right: 500px solid transparent;
-    border-top: 500px solid #4679BD;
+ul.size-choices:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #fff;
+	border-width: 10px;
+	margin-left: -10px;
+}
+ul.size-choices:before {
+	border-color: rgba(92, 164, 215, 0);
+	border-top-color: #5CA4D7;
+	border-width: 13px;
+	margin-left: -13px;
 }
 
 li.l {
