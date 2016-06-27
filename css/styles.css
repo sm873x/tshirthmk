@@ -97,33 +97,30 @@ li.flip {
 
 /* Nav Option CSS Color Box */
 .blue-box {
-    position: relative;
-    width: 0.6em;
-    height: 0.6em;
-    padding: 2.8px;
+    width: 3px;
+    height: 6px;
+    padding: 6px;
     background-color: #7FBAE2;
-    margin: 0;
-    border: 2px solid #fff;
+    margin: 1px;
+    border: 1px solid #fff;
 }
 
 .pink-box {
-    position: relative;
-    width: 0.6em;
-    height: 0.6em;
-    padding: 2.8px;
+    width: 3px;
+    height: 6px;
+    padding: 6px;
     background-color: #D482AA;
-    margin: 0;
-    border: 2px solid #fff;
+    margin: 1px;
+    border: 1px solid #fff;
 }
 
 .yellow-box {
-    position: relative;
-    width: 0.6em;
-    height: 0.6em;
-    padding: 2.8px;
+    width: 3px;
+    height: 6px;
+    padding: 6px;
     background-color: #DAAE7B;
-    margin: 0;
-    border: 2px solid #fff;
+    margin: 1px;
+    border: 1px solid #fff;
 }
 
 /*Take away double borders*/
