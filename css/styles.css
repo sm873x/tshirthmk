@@ -2,6 +2,11 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic);
 
+/* reset styles */
+html,body,div,h1,h2,h3,h4,h5,h6{margin:0;}
+p{margin:0.2em 0;}
+ul{padding:0.5em;}
+
 body {
     font-family: 'Open Sans', 'san-serif';
     color: #5CA4D7;
@@ -137,11 +142,16 @@ ul.size-choices {
     font-weight: bold;
     font-size: 1.5em;
     color: #5CA4D7;
+    transition: all 0.3s;
+    visibility: hidden;
 }
 
 .size:hover > .size-choices {
-    animation: menu linear 0.3s;
-    animation-fill-mode: forwards;
+    /*animation: menu linear 0.3s;*/
+    /*animation-fill-mode: forwards;*/
+    opacity: 1;
+    top: -4em;
+    visibility: visible;
 }
 
 ul.size-choices:after, ul.size-choices:before {
@@ -288,6 +298,7 @@ ul.color > li:active {
 
     100% {
         opacity: 1;
+
     }
 }
 
