@@ -3,9 +3,13 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic);
 
 /* reset styles */
-html,body,div,h1,h2,h3,h4,h5,h6{margin:0;}
+/*html,body,div,h1,h2,h3,h4,h5,h6{margin:0;}
 p{margin:0.2em 0;}
-ul{padding:0.5em;}
+ul{padding:0.5em;}*/
+
+html {
+    max-width: 1366px;
+}
 
 body {
     font-family: 'Open Sans', 'san-serif';
@@ -21,12 +25,14 @@ main {
     margin: 0 auto;
 }
 
-article {
+.tshirts-index {
     float: left;
+    /*width: 25vw;*/
     margin: 1em;
 }
 
 .tshirt-image {
+
     padding: 1.5em;
     border: 3px solid #5CA4D7;
     border-bottom: none;
@@ -305,3 +311,17 @@ ul.color > li:active {
 /* Shirt Flip Animation */
 
 /* Media Queries - Day 6 Hmwk */
+
+@media screen and (min-width: 240px, max-width: 480px) {
+
+
+}
+
+@media screen and (min-width: 481px, max-width: 800px) {
+
+
+}
+
+@media screen and (min-width: 801px, max-width: 1366px) {
+    
+}
