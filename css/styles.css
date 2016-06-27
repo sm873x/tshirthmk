@@ -7,82 +7,85 @@
 p{margin:0.2em 0;}
 ul{padding:0.5em;}*/
 
-html {
-    max-width: 1366px;
-}
+/*html {
+    max-width: 480px;
+}*/
 
 body {
     font-family: 'Open Sans', 'san-serif';
     color: #5CA4D7;
+    /*margin: 0;*/
 }
 
 ul {
     list-style: none;
 }
-
+/*
 main {
-    width: 100%;
-    margin: 0 auto;
-}
+    max-width: 100%;
+}*/
 
 .tshirts-index {
-    float: left;
-    /*width: 25vw;*/
-    margin: 1em;
+    position: relative;
+    width: 110px;
+    margin: 2px;
+    display: inline-block;
+    /*box-sizing: border-box;*/
 }
 
 .tshirt-image {
-
-    padding: 1.5em;
     border: 3px solid #5CA4D7;
     border-bottom: none;
+    padding: 10px;
+}
+
+.tshirt-image img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.tshirt-options {
+    max-width: 110px;
 }
 
 ul.options {
     margin: 0;
-    width: 100%;
     padding: 0;
 }
 
 .options > li {
-    float: left;
+    float:left;
     width: 20%;
-    height: auto;
-    padding: 10px 15px 15px 10px;
-    font-size: 1.6em;
-    text-align: center;
     border: 3px solid #5CA4D7;
+    text-align: center;
     box-sizing: border-box;
+
 }
 
 .flip {
-    position: relative;
-    bottom: 18.2em;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 li.flip {
     border-top: none;
+    border-right: none;
     float: right;
-    max-width: 1.5em;
-    padding: 0;
-    margin:0;
 }
 
 .tshirt-descriptions {
     padding: 0;
-    margin: 0;
-    bottom: 1.2em;
-    position: relative;
 }
 .name {
     float: left;
     clear: both;
-    font-size: 1.5em;
+    font-size: 0.8em;
 }
 
 .price {
     float: right;
-    font-size: 1.6em;
+    font-size: 0.9em;
     font-weight: bold;
 }
 
@@ -95,35 +98,32 @@ li.flip {
 /* Nav Option CSS Color Box */
 .blue-box {
     position: relative;
-    width: 1.3em;
-    height: 1.3em;
-    left: 22%;
-    padding: 0;
+    width: 0.6em;
+    height: 0.6em;
+    padding: 2.8px;
     background-color: #7FBAE2;
     margin: 0;
-    border: 2.5px solid #fff;
+    border: 2px solid #fff;
 }
 
 .pink-box {
     position: relative;
-    width: 1.3em;
-    height: 1.3em;
-    left: 22%;
-    padding: 0;
+    width: 0.6em;
+    height: 0.6em;
+    padding: 2.8px;
     background-color: #D482AA;
     margin: 0;
-    border: 2.5px solid #fff;
+    border: 2px solid #fff;
 }
 
 .yellow-box {
     position: relative;
-    width: 1.3em;
-    height: 1.3em;
-    left: 22%;
-    padding: 0;
+    width: 0.6em;
+    height: 0.6em;
+    padding: 2.8px;
     background-color: #DAAE7B;
     margin: 0;
-    border: 2.5px solid #fff;
+    border: 2px solid #fff;
 }
 
 /*Take away double borders*/
@@ -312,16 +312,19 @@ ul.color > li:active {
 
 /* Media Queries - Day 6 Hmwk */
 
-@media screen and (min-width: 240px, max-width: 480px) {
+/*@media screen and (max-width: 480px) {
+
+
+}*/
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
 
 
 }
 
-@media screen and (min-width: 481px, max-width: 800px) {
+@media screen and (min-width: 801px) {
 
 
-}
 
-@media screen and (min-width: 801px, max-width: 1366px) {
-    
+    }
 }
