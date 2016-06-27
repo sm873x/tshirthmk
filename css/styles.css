@@ -252,7 +252,6 @@ li.color-pink {
 }
 
 li.color-yellow {
-
     width: 1.3em;
     height: 1.1em;
     background-color: #DAAE7B;
@@ -291,3 +290,5 @@ ul.color > li:active {
         opacity: 1;
     }
 }
+
+/* Shirt Flip Animation */
