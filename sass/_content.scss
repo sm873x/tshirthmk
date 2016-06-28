@@ -14,13 +14,14 @@
 .tshirt-image {
     border: $themeBorder;
     border-bottom: none;
-    padding: 10px;
+    padding: $imagePadding;
+
+    img {
+        width: 100%;
+        vertical-align: middle;
+    }
 }
 
-.tshirt-image img {
-    width: 100%;
-    vertical-align: middle;
-}
 
 //Navigation - options
 
@@ -28,24 +29,23 @@
     max-width: 100%;
 }
 
-ul.options {
+.options {
     margin: 0;
     padding: 0;
-}
 
-.options > li {
-    float:left;
-    width: 33.3%;
-    padding: 10px;
-    border: $themeBorder;
-    text-align: center;
-    box-sizing: border-box;
-}
+    > li {
+        float:left;
+        width: $mobileOptionsWidth;
+        padding: $mobileOptionsPadding;
+        border: $themeBorder;
+        text-align: center;
+        box-sizing: border-box;
+    }
 
-/* Nav Option Hover */
-.options > li:hover {
-    background-color: #5CA4D7;
-    color: white;
+    li:hover {
+        background-color: $themeColor;
+        color: $hoverFontColor;
+    }
 }
 
 /* Nav Option CSS Color Box */
@@ -53,7 +53,7 @@ ul.options {
     width: 3px;
     height: 6px;
     padding: 6px;
-    background-color: #7FBAE2;
+    background-color: $colorBlueTshirt;
     margin: 1px;
     border: 1px solid #fff;
 }
@@ -62,7 +62,7 @@ ul.options {
     width: 3px;
     height: 6px;
     padding: 6px;
-    background-color: #D482AA;
+    background-color: $colorPinkTshirt;
     margin: 1px;
     border: 1px solid #fff;
 }
@@ -71,7 +71,7 @@ ul.options {
     width: 3px;
     height: 6px;
     padding: 6px;
-    background-color: #DAAE7B;
+    background-color: $colorYellowTshirt;
     margin: 1px;
     border: 1px solid #fff;
 }
