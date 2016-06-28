@@ -40,7 +40,7 @@ main {
 }
 
 .tshirt-options {
-    max-width: 110px;
+    max-width: 115px;
 }
 
 ul.options {
@@ -50,24 +50,24 @@ ul.options {
 
 .options > li {
     float:left;
-    width: 20%;
+    width: 33.3%;
+    padding: 10px;
     border: 3px solid #5CA4D7;
     text-align: center;
     box-sizing: border-box;
-
 }
 
-.flip {
+/*.flip {
     position: absolute;
     top: 0;
     right: 0;
-}
+}*/
 
-li.flip {
+/*li.flip {
     border-top: none;
     border-right: none;
     float: right;
-}
+}*/
 
 .tshirt-descriptions {
     padding: 0;
@@ -120,7 +120,20 @@ li.flip {
 }
 
 /*Take away double borders*/
-li.refresh, li.heart, li.size, li.color {
+/*li.refresh, li.heart, li.size, li.color {
+    border-right: none;
+}*/
+
+li.refresh, li.heart {
+    border-right: none;
+    border-bottom: none;
+}
+
+li.size {
+    border-bottom: none;
+}
+
+li.color, li.cart {
     border-right: none;
 }
 
