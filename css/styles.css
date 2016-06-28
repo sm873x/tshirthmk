@@ -31,7 +31,6 @@ main {
     width: 110px;
     margin: 2px;
     display: inline-block;
-    /*box-sizing: border-box;*/
 }
 
 .tshirt-image {
@@ -334,25 +333,32 @@ ul.color > li:active {
         height: 4px;
         padding: 7px;
     }
+}
 
 @media screen and (min-width: 801px) {
 
     main {
-        max-width: 801px;
+        max-width: 800px;
+
     }
 
     .tshirts-index {
-        width: 190.25px;
+        width: 190px;
     }
 
     .tshirt-options {
-        max-width: 190.25px;
+        max-width: 190px;
     }
 
     .blue-box, .pink-box, .yellow-box{
-        width: 5px;
-        height: 4px;
-        padding: 7px;
+        width: 18px;
+        height: 18px;
+        padding: 0;
+        margin-left: 7px;
+    }
+
+    .name, .price {
+        font-size: 1em;
     }
 
 }
