@@ -11,7 +11,7 @@
     }
 
     .tshirts-index {
-        width: 31%;
+        width: $mediumArticleWidth;
     }
 
     .blue-box, .pink-box, .yellow-box{
@@ -55,8 +55,8 @@
     }
 
     .tshirts-index {
-        width: 190px;
-        margin: 20px 3px;
+        width: $largeArticleWidth;
+        margin: $largeArticleMargin;
     }
 
     .options > li {

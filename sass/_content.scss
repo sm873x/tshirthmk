@@ -4,8 +4,8 @@
 
 .tshirts-index {
     position: relative;
-    width: 110px;
-    margin: 2px;
+    width: $mobileArticleWidth;
+    margin: $mobileArticleMargin;
     display: inline-block;
 }
 

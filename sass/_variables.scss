@@ -1,10 +1,11 @@
 $themeFont: 'Open Sans', 'san-serif';
 $themeFontColor: #5CA4D7;
-$pageMargins: 6px auto; 
+$pageMargins: 6px auto;
 
 //Mobile First
 $mobileDisplayWidth: 236px;
-
+$mobileArticleWidth: 110px;
+$mobileArticleMargin: 2px;
 
 
 
@@ -12,9 +13,11 @@ $mobileDisplayWidth: 236px;
 //Medium Displays
 $mediumDisplayWidth: 481px;
 $mediumMaxWidth: 800px;
-
+$mediumArticleWidth: 31%;
 
 
 
 //Large Displays
 $largeDisplayWidth: 801px;
+$largeArticleWidth: 190px;
+$largeArticleMargin: 20px 3px;
