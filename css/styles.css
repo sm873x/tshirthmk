@@ -7,14 +7,9 @@
 p{margin:0.2em 0;}
 ul{padding:0.5em;}*/
 
-/*html {
-    max-width: 480px;
-}*/
-
 body {
     font-family: 'Open Sans', 'san-serif';
     color: #5CA4D7;
-    /*margin: 0;*/
 }
 
 ul {
@@ -77,6 +72,7 @@ li.flip {
 .tshirt-descriptions {
     padding: 0;
 }
+
 .name {
     float: left;
     clear: both;
@@ -279,6 +275,7 @@ li.color-green {
 ul.color > li:active {
     background: #afd6f6;
 }
+
 /* Menu animations keyframes */
 @keyframes menu {
     0% {
@@ -307,12 +304,11 @@ ul.color > li:active {
 
 /* Shirt Flip Animation */
 
+
+
 /* Media Queries - Day 6 Hmwk */
 
-/*@media screen and (max-width: 480px) {
-
-
-}*/
+/* mobile first strategy so build for smallest screen first */
 
 @media screen and (min-width: 480px) and (max-width: 800px) {
 
@@ -339,7 +335,6 @@ ul.color > li:active {
 
     main {
         max-width: 800px;
-
     }
 
     .tshirts-index {
