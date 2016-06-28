@@ -17,14 +17,14 @@ ul {
 }
 
 main {
-    max-width: 90vw;
-    margin: 2px auto;
+    max-width: 236px;
+    margin: 6px auto;
 }
 
 .tshirts-index {
     position: relative;
-    width: 115px;
-    margin: 4px;
+    width: 110px;
+    margin: 2px;
     display: inline-block;
 }
 
@@ -40,7 +40,7 @@ main {
 }
 
 .tshirt-options {
-    max-width: 115px;
+    max-width: 100%;
 }
 
 ul.options {
@@ -71,17 +71,21 @@ ul.options {
 
 .tshirt-descriptions {
     padding: 0;
+    width: 115px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .name {
     float: left;
-    clear: both;
-    font-size: 0.8em;
+    font-size: 1;
+
 }
 
 .price {
-    float: right;
-    font-size: 0.9em;
+    float: left;
+    clear: both;
+    font-size: 1em;
     font-weight: bold;
 }
 
@@ -142,13 +146,13 @@ li.size {
     position: relative;
 }
 
-ul.size-choices {
+.size-choices {
     opacity: 0;
     position: absolute;
     text-align: center;
-    padding: 0 0.7em;
-    top: -4.4em;
-    left: -0.4em;
+    padding: 0 10px;
+    top: -89px;
+    left: -21px;
     border: 3px solid #5CA4D7;
     background-color: #fff;
     font-weight: bold;
@@ -202,7 +206,7 @@ li.s {
     font-size: 50%;
 }
 
-ul.size-choices > li:active {
+ul.size-choices > li:hover {
     background: #afd6f6;
 }
 
@@ -216,17 +220,22 @@ ul.color-index {
     position: absolute;
     border: 3px solid #5CA4D7;
     background-color: #fff;
-    padding-left: 0;
-    margin: 0;
-    top: -3.3em;
-    left: -0.1em;
+    padding-left: 7px;
+    /*margin: 0;*/
+    top: -112px;
+    left: -2px;
     width: 100%;
     box-sizing: content-box;
+    transition: all 0.3s;
+    visibility: hidden;
 }
 
 .color:hover > .color-index {
-    animation: menu linear 0.3s;
-    animation-fill-mode: forwards;
+    /*animation: menu linear 0.3s;
+    animation-fill-mode: forwards;*/
+    opacity: 1;
+    bottom: 2em;
+    visibility: visible;
 }
 
 .color-index li {
@@ -285,12 +294,12 @@ li.color-green {
     background-color: #50a169;
 }
 
-ul.color > li:active {
-    background: #afd6f6;
+.color > li:hover {
+    background-color: : #afd6f6;
 }
 
 /* Menu animations keyframes */
-@keyframes menu {
+/*@keyframes menu {
     0% {
         opacity: 0;
         top: -5.2em;
@@ -313,7 +322,7 @@ ul.color > li:active {
         opacity: 1;
 
     }
-}
+}*/
 
 /* Shirt Flip Animation */
 
@@ -326,15 +335,11 @@ ul.color > li:active {
 @media screen and (min-width: 481px) and (max-width: 800px) {
 
     main {
-        max-width: 480px;
+        max-width: 481px;
     }
 
     .tshirts-index {
-        width: 150px;
-    }
-
-    .tshirt-options {
-        max-width: 150px;
+        width: 31%;
     }
 
     .blue-box, .pink-box, .yellow-box{
@@ -342,7 +347,34 @@ ul.color > li:active {
         height: 4px;
         padding: 7px;
     }
+
+    ul.color-index {
+        width: 58px;
+        padding-left: 4px;
+        top: -61px;
+        left: -2px;
+    }
+
+    .size:hover > .size-choices {
+        top: -4.6em;
+    }
+
+    .color:hover > .color-index {
+        bottom: 40px;
+    }
+
+    .tshirt-descriptions {
+        width: 150px;
+        margin-top: 1em;
+        font-size: 17pt;
+    }
+
+    ul.size-choices {
+        left: -10px;
+    }
+
 }
+
 
 @media screen and (min-width: 801px) {
 
