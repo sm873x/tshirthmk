@@ -8,3 +8,8 @@ body {
         list-style: none;
     }
 }
+
+main {
+    max-width: $mobileDisplayWidth;
+    margin: $pageMargins;
+}
