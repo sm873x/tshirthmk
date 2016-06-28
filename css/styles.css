@@ -20,10 +20,11 @@ body {
 ul {
     list-style: none;
 }
-/*
+
 main {
-    max-width: 100%;
-}*/
+    max-width: 236px;
+    margin: 6px auto;
+}
 
 .tshirts-index {
     position: relative;
@@ -314,14 +315,44 @@ ul.color > li:active {
 
 }*/
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
+@media screen and (min-width: 480px) and (max-width: 800px) {
 
+    main {
+        max-width: 480px;
+    }
 
-}
+    .tshirts-index {
+        width: 150px;
+    }
+
+    .tshirt-options {
+        max-width: 150px;
+    }
+
+    .blue-box, .pink-box, .yellow-box{
+        width: 5px;
+        height: 4px;
+        padding: 7px;
+    }
 
 @media screen and (min-width: 801px) {
 
-
-
+    main {
+        max-width: 801px;
     }
+
+    .tshirts-index {
+        width: 190.25px;
+    }
+
+    .tshirt-options {
+        max-width: 190.25px;
+    }
+
+    .blue-box, .pink-box, .yellow-box{
+        width: 5px;
+        height: 4px;
+        padding: 7px;
+    }
+
 }
