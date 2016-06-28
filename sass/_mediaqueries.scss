@@ -1,0 +1,132 @@
+//Media Queries Partial
+
+/* Media Queries - Day 6 Hmwk */
+
+/* mobile first strategy so build for smallest screen first */
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+
+    main {
+        max-width: 481px;
+    }
+
+    .tshirts-index {
+        width: 31%;
+    }
+
+    .blue-box, .pink-box, .yellow-box{
+        width: 5px;
+        height: 4px;
+        padding: 7px;
+    }
+
+    ul.color-index {
+        width: 58px;
+        padding-left: 4px;
+        top: -61px;
+        left: -2px;
+    }
+
+    .size:hover > .size-choices {
+        top: -4.6em;
+    }
+
+    .color:hover > .color-index {
+        bottom: 40px;
+    }
+
+    .tshirt-descriptions {
+        width: 150px;
+        margin-top: 1em;
+        font-size: 17pt;
+    }
+
+    ul.size-choices {
+        left: -10px;
+    }
+
+}
+
+
+@media screen and (min-width: 801px) {
+
+    main {
+        max-width: 801px;
+    }
+
+    .tshirts-index {
+        width: 190px;
+        margin: 20px 3px;
+    }
+
+    .options > li {
+        width: 20%;
+        padding: 4px;
+    }
+
+    li.refresh, li.heart, li.size, li.color {
+        border-right: none;
+    }
+
+    li.refresh, li.heart, li.size {
+        border-bottom: 3px solid #5CA4D7;
+    }
+
+    li.cart {
+        border-right: 3px solid #5CA4D7;
+    }
+
+    .flip {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    li.flip {
+        border-top: none;
+        border-right: none;
+        float: right;
+    }
+
+    .blue-box, .pink-box, .yellow-box{
+        width: 18px;
+        height: 18px;
+        padding: 0;
+        margin-left: 4px;
+    }
+
+    ul.size-choices {
+        top: -121px;
+        left: -10px;
+    }
+
+    .size:hover > .size-choices {
+        top: -109px;
+    }
+
+    ul.color-index {
+        width: 58px;
+        padding-left: 5px;
+        top: -72px;
+        left: -18px;
+    }
+
+    .color:hover > .color-index {
+        top: -62px;
+    }
+
+    .tshirt-descriptions {
+        width: 190px;
+        position: relative;
+    }
+
+    .name, .price {
+        font-size: 16pt;
+    }
+
+    .price {
+        float: right;
+        clear: right;
+    }
+
+}
