@@ -69,11 +69,11 @@
     }
 
     li.refresh, li.heart, li.size {
-        border-bottom: 3px solid #5CA4D7;
+        border-bottom: $themeBorder;
     }
 
     li.cart {
-        border-right: 3px solid #5CA4D7;
+        border-right: $themeBorder;
     }
 
     .flip {

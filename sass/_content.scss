@@ -12,7 +12,7 @@
 //Tshirt Images
 
 .tshirt-image {
-    border: 3px solid #5CA4D7;
+    border: $themeBorder;
     border-bottom: none;
     padding: 10px;
 }
@@ -37,7 +37,7 @@ ul.options {
     float:left;
     width: 33.3%;
     padding: 10px;
-    border: 3px solid #5CA4D7;
+    border: $themeBorder;
     text-align: center;
     box-sizing: border-box;
 }
@@ -103,7 +103,7 @@ li.size {
     padding: 0 10px;
     top: -89px;
     left: -21px;
-    border: 3px solid #5CA4D7;
+    border: $themeBorder;
     background-color: #fff;
     font-weight: bold;
     font-size: 1.5em;
@@ -168,7 +168,7 @@ li.color {
 ul.color-index {
     opacity: 0;
     position: absolute;
-    border: 3px solid #5CA4D7;
+    border: $themeBorder;
     background-color: #fff;
     padding-left: 7px;
     /*margin: 0;*/
