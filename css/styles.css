@@ -1,84 +1,332 @@
-/*
-Error: Invalid CSS after "...kground-color: ": expected expression (e.g. 1px, bold), was ": #afd6f6;"
-        on line 253 of sass/_content.scss
-        from line 7 of sass/main.scss
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic);
+body {
+  font-family: "Open Sans", "san-serif";
+  color: #5CA4D7; }
+  body ul {
+    list-style: none; }
 
-248:     height: 1.1em;
-249:     background-color: #50a169;
-250: }
-251: 
-252: .color > li:hover {
-253:     background-color: : #afd6f6;
-254: }
-255: 
-256: //Tshirt Description Captions
-257: 
-258: .tshirt-descriptions {
+main {
+  max-width: 236px;
+  margin: 6px auto; }
 
-Backtrace:
-sass/_content.scss:253
-sass/main.scss:7
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/lexer.rb:229:in `expected!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/parser.rb:704:in `assert_expr'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/parser.rb:75:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1051:in `sass_script'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:897:in `value!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:769:in `block in try_declaration'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1165:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1165:in `rethrow'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:782:in `try_declaration'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:665:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:312:in `to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `block in with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...kground-color: \": expected expression (e.g. 1px, bold), was \": #afd6f6;\"\A         on line 253 of sass/_content.scss\A         from line 7 of sass/main.scss\A \A 248:     height: 1.1em;\A 249:     background-color: #50a169;\A 250: }\A 251: \A 252: .color > li:hover {\A 253:     background-color: : #afd6f6;\A 254: }\A 255: \A 256: //Tshirt Description Captions\A 257: \A 258: .tshirt-descriptions {"; }
+.tshirts-index {
+  position: relative;
+  width: 110px;
+  margin: 2px;
+  display: inline-block; }
+
+.tshirt-image {
+  border: 3px solid #5CA4D7;
+  border-bottom: none;
+  padding: 10px; }
+
+.tshirt-image img {
+  width: 100%;
+  vertical-align: middle; }
+
+.tshirt-options {
+  max-width: 100%; }
+
+ul.options {
+  margin: 0;
+  padding: 0; }
+
+.options > li {
+  float: left;
+  width: 33.3%;
+  padding: 10px;
+  border: 3px solid #5CA4D7;
+  text-align: center;
+  box-sizing: border-box; }
+
+/* Nav Option Hover */
+.options > li:hover {
+  background-color: #5CA4D7;
+  color: white; }
+
+/* Nav Option CSS Color Box */
+.blue-box {
+  width: 3px;
+  height: 6px;
+  padding: 6px;
+  background-color: #7FBAE2;
+  margin: 1px;
+  border: 1px solid #fff; }
+
+.pink-box {
+  width: 3px;
+  height: 6px;
+  padding: 6px;
+  background-color: #D482AA;
+  margin: 1px;
+  border: 1px solid #fff; }
+
+.yellow-box {
+  width: 3px;
+  height: 6px;
+  padding: 6px;
+  background-color: #DAAE7B;
+  margin: 1px;
+  border: 1px solid #fff; }
+
+/*Take away double borders*/
+li.refresh, li.heart {
+  border-right: none;
+  border-bottom: none; }
+
+li.size {
+  border-bottom: none; }
+
+li.color, li.cart {
+  border-right: none; }
+
+/* Size menu and animation */
+li.size {
+  position: relative; }
+
+.size-choices {
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  padding: 0 10px;
+  top: -89px;
+  left: -21px;
+  border: 3px solid #5CA4D7;
+  background-color: #fff;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #5CA4D7;
+  transition: all 0.3s;
+  visibility: hidden; }
+
+.size:hover > .size-choices {
+  /*animation: menu linear 0.3s;*/
+  /*animation-fill-mode: forwards;*/
+  opacity: 1;
+  top: -4em;
+  visibility: visible; }
+
+ul.size-choices:after, ul.size-choices:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none; }
+
+ul.size-choices:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #fff;
+  border-width: 10px;
+  margin-left: -10px; }
+
+ul.size-choices:before {
+  border-color: rgba(93, 165, 215, 0);
+  border-top-color: #5CA4D7;
+  border-width: 13px;
+  margin-left: -13px; }
+
+li.l {
+  font-size: 90%; }
+
+li.m {
+  font-size: 70%; }
+
+li.s {
+  font-size: 50%; }
+
+ul.size-choices > li:hover {
+  background: #afd6f6; }
+
+/* Color menu and animations */
+li.color {
+  position: relative; }
+
+ul.color-index {
+  opacity: 0;
+  position: absolute;
+  border: 3px solid #5CA4D7;
+  background-color: #fff;
+  padding-left: 7px;
+  /*margin: 0;*/
+  top: -112px;
+  left: -2px;
+  width: 100%;
+  box-sizing: content-box;
+  transition: all 0.3s;
+  visibility: hidden; }
+
+.color:hover > .color-index {
+  /*animation: menu linear 0.3s;
+  animation-fill-mode: forwards;*/
+  opacity: 1;
+  bottom: 2em;
+  visibility: visible; }
+
+.color-index li {
+  width: 50%;
+  float: left;
+  padding-top: 0.2em;
+  border: 3px solid #fff; }
+
+ul.color-index:after, ul.color-index:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none; }
+
+ul.color-index:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #fff;
+  border-width: 10px;
+  margin-left: -10px; }
+
+ul.color-index:before {
+  border-color: rgba(93, 165, 215, 0);
+  border-top-color: #5CA4D7;
+  border-width: 13px;
+  margin-left: -13px; }
+
+li.color-blue {
+  width: 1.3em;
+  height: 1.1em;
+  background-color: #7FBAE2; }
+
+li.color-pink {
+  width: 1.3em;
+  height: 1.1em;
+  background-color: #D482AA; }
+
+li.color-yellow {
+  width: 1.3em;
+  height: 1.1em;
+  background-color: #DAAE7B; }
+
+li.color-green {
+  width: 1.3em;
+  height: 1.1em;
+  background-color: #50a169; }
+
+.color > li:hover {
+  background-color: #afd6f6; }
+
+.tshirt-descriptions {
+  padding: 0;
+  width: 115px;
+  text-align: center;
+  margin: 0 auto; }
+
+.name {
+  float: left;
+  font-size: 1; }
+
+.price {
+  float: left;
+  clear: both;
+  font-size: 1em;
+  font-weight: bold; }
+
+/* Media Queries - Day 6 Hmwk */
+/* mobile first strategy so build for smallest screen first */
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  main {
+    max-width: 481px; }
+
+  .tshirts-index {
+    width: 31%; }
+
+  .blue-box, .pink-box, .yellow-box {
+    width: 5px;
+    height: 4px;
+    padding: 7px; }
+
+  ul.color-index {
+    width: 58px;
+    padding-left: 4px;
+    top: -61px;
+    left: -2px; }
+
+  .size:hover > .size-choices {
+    top: -4.6em; }
+
+  .color:hover > .color-index {
+    bottom: 40px; }
+
+  .tshirt-descriptions {
+    width: 150px;
+    margin-top: 1em;
+    font-size: 17pt; }
+
+  ul.size-choices {
+    left: -10px; } }
+@media screen and (min-width: 801px) {
+  main {
+    max-width: 801px; }
+
+  .tshirts-index {
+    width: 190px;
+    margin: 20px 3px; }
+
+  .options > li {
+    width: 20%;
+    padding: 4px; }
+
+  li.refresh, li.heart, li.size, li.color {
+    border-right: none; }
+
+  li.refresh, li.heart, li.size {
+    border-bottom: 3px solid #5CA4D7; }
+
+  li.cart {
+    border-right: 3px solid #5CA4D7; }
+
+  .flip {
+    position: absolute;
+    top: 0;
+    right: 0; }
+
+  li.flip {
+    border-top: none;
+    border-right: none;
+    float: right; }
+
+  .blue-box, .pink-box, .yellow-box {
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    margin-left: 4px; }
+
+  ul.size-choices {
+    top: -121px;
+    left: -10px; }
+
+  .size:hover > .size-choices {
+    top: -109px; }
+
+  ul.color-index {
+    width: 58px;
+    padding-left: 5px;
+    top: -72px;
+    left: -18px; }
+
+  .color:hover > .color-index {
+    top: -62px; }
+
+  .tshirt-descriptions {
+    width: 190px;
+    position: relative; }
+
+  .name, .price {
+    font-size: 16pt; }
+
+  .price {
+    float: right;
+    clear: right; } }
+
+/*# sourceMappingURL=styles.css.map */

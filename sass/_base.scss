@@ -1,10 +1,10 @@
 //base - styling for the entire body
 
 body {
-    font-family: 'Open Sans', 'san-serif';
-    color: #5CA4D7;
-}
+    font-family: $themeFont;
+    color: $themeFontColor;
 
-ul {
-    list-style: none;
+    ul {
+        list-style: none;
+    }
 }
