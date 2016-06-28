@@ -17,14 +17,14 @@ ul {
 }
 
 main {
-    max-width: 236px;
-    margin: 6px auto;
+    max-width: 90vw;
+    margin: 2px auto;
 }
 
 .tshirts-index {
     position: relative;
-    width: 110px;
-    margin: 2px;
+    width: 115px;
+    margin: 4px;
     display: inline-block;
 }
 
@@ -310,7 +310,7 @@ ul.color > li:active {
 
 /* mobile first strategy so build for smallest screen first */
 
-@media screen and (min-width: 480px) and (max-width: 800px) {
+@media screen and (min-width: 481px) and (max-width: 800px) {
 
     main {
         max-width: 480px;
@@ -334,7 +334,7 @@ ul.color > li:active {
 @media screen and (min-width: 801px) {
 
     main {
-        max-width: 800px;
+        max-width: 801px;
     }
 
     .tshirts-index {
