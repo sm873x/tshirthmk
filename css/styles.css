@@ -57,18 +57,6 @@ ul.options {
     box-sizing: border-box;
 }
 
-/*.flip {
-    position: absolute;
-    top: 0;
-    right: 0;
-}*/
-
-/*li.flip {
-    border-top: none;
-    border-right: none;
-    float: right;
-}*/
-
 .tshirt-descriptions {
     padding: 0;
     width: 115px;
@@ -124,9 +112,6 @@ ul.options {
 }
 
 /*Take away double borders*/
-/*li.refresh, li.heart, li.size, li.color {
-    border-right: none;
-}*/
 
 li.refresh, li.heart {
     border-right: none;
@@ -384,21 +369,77 @@ li.color-green {
 
     .tshirts-index {
         width: 190px;
+        margin: 20px 3px;
     }
 
-    .tshirt-options {
-        max-width: 190px;
+    .options > li {
+        width: 20%;
+        padding: 4px;
+    }
+
+    li.refresh, li.heart, li.size, li.color {
+        border-right: none;
+    }
+
+    li.refresh, li.heart, li.size {
+        border-bottom: 3px solid #5CA4D7;
+    }
+
+    li.cart {
+        border-right: 3px solid #5CA4D7;
+    }
+
+    .flip {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    li.flip {
+        border-top: none;
+        border-right: none;
+        float: right;
     }
 
     .blue-box, .pink-box, .yellow-box{
         width: 18px;
         height: 18px;
         padding: 0;
-        margin-left: 7px;
+        margin-left: 4px;
+    }
+
+    ul.size-choices {
+        top: -121px;
+        left: -10px;
+    }
+
+    .size:hover > .size-choices {
+        top: -109px;
+    }
+
+    ul.color-index {
+        width: 58px;
+        padding-left: 5px;
+        top: -72px;
+        left: -18px;
+    }
+
+    .color:hover > .color-index {
+        top: -62px;
+    }
+
+    .tshirt-descriptions {
+        width: 190px;
+        position: relative;
     }
 
     .name, .price {
-        font-size: 1em;
+        font-size: 16pt;
+    }
+
+    .price {
+        float: right;
+        clear: right;
     }
 
 }
