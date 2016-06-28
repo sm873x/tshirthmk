@@ -4,19 +4,6 @@
 @import "mixins-functions";
 
 @import "base";
+@import 'content';
 
 @import "mediaqueries";
-
-//content
-
-main {
-    max-width: 236px;
-    margin: 6px auto;
-}
-
-.tshirts-index {
-    position: relative;
-    width: 110px;
-    margin: 2px;
-    display: inline-block;
-}
