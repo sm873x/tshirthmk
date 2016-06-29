@@ -16,35 +16,34 @@
 
     .color > div {
         @include opt-color-boxes($medColBoxWidth, $medColBoxHeight, $medColBoxPadding);
+
+        &:hover > .color-index {
+            bottom: 40px;
+        }
+
+        .color-index {
+            @include color-index(58px, 4px, -61px, 2px);
+        }
     }
 
-    ul.color-index {
-        width: 58px;
-        padding-left: 4px;
-        top: -61px;
-        left: -2px;
-    }
+    .size {
 
-    .size:hover > .size-choices {
-        top: -4.6em;
-    }
+        &:hover > .size-choices {
+        top: $medHoverTop;
+        }
 
-    .color:hover > .color-index {
-        bottom: 40px;
-    }
-
-    ul.size-choices {
-        left: -10px;
+        .size-choices {
+            padding: 0px 7px;
+            left: 0;
+        }
     }
 
     .tshirt-descriptions {
         width: $medDesPadding;
-        margin-top: 1em;
         font-size: $fontSizeMedDes;
     }
 
 }
-
 
 @media screen and (min-width: $largeDisplayWidth) {
 
@@ -83,31 +82,37 @@
             border-right: none;
             float: right;
         }
+
     }
 
-    .color > div {
-        @include opt-color-boxes($larColBoxWidth, $larColBoxHeight, $larColBoxPadding);
-        margin-left: 4px;
-    }
+    .size {
 
-    ul.size-choices {
+        &:hover > .size-choices {
+        top: $larHovertop;
+        }
+
+        .size-choices {
         top: -121px;
         left: -10px;
+        }
+
     }
 
-    .size:hover > .size-choices {
-        top: -109px;
-    }
+    .color {
 
-    ul.color-index {
-        width: 58px;
-        padding-left: 5px;
-        top: -72px;
-        left: -18px;
-    }
+        > div {
+        @include opt-color-boxes($larColBoxWidth, $larColBoxHeight, $larColBoxPadding);
+        margin-left: 4px;
+        }
 
-    .color:hover > .color-index {
-        top: -62px;
+        .color-index {
+        @include color-index(58px, 5px, -72px, -18px);
+        }
+
+        &:hover > .color-index {
+        top: -61px;
+        }
+
     }
 
     .tshirt-descriptions {

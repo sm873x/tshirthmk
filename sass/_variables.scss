@@ -7,6 +7,7 @@ $colorBlueTshirt: #7FBAE2;
 $colorPinkTshirt: #D482AA;
 $colorYellowTshirt: #DAAE7B;
 $borderOptColBox: 1px solid #fff;
+$colorMenuHover: #afd6f6;
 
 
 //Mobile First
@@ -22,9 +23,7 @@ $mobColBoxPadding: 6px;
 $mobColBoxMargin: 1px;
 $mobDesPadding: 115px;
 $fontSizeMobDes: 1em;
-
-
-
+$mobHoverTop: -107px;
 
 
 //Medium Displays
@@ -36,6 +35,7 @@ $medColBoxHeight: 6px;
 $medColBoxPadding: 6px;
 $medDesPadding: 150px;
 $fontSizeMedDes: 17pt;
+$medHoverTop: -108px;
 
 
 //Large Displays
@@ -49,3 +49,4 @@ $larColBoxHeight: 18px;
 $larColBoxPadding: 0;
 $larDesPadding: 190px;
 $fontSizeLarDes: 16pt;
+$larHovertop: -109px;

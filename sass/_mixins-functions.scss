@@ -1,8 +1,48 @@
 
-
 //Color Boxes
 @mixin opt-color-boxes($width, $height, $padding) {
     width: $width;
     height: $height;
     padding: $padding;
+}
+
+@mixin color-square {
+    width: 1.3em;
+    height: 1.1em;
+}
+
+
+@mixin color-index($width:32px, $padding:4px, $top:-123px, $left:-3) {
+    width: $width;
+    padding-left: $padding;
+    top: $top;
+    left: $left;
+}
+
+@mixin menu-triangle {
+    &:after, &:before {
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    &:after {
+        border-color: rgba(#ffffff, 0);
+        border-top-color: #fff;
+        border-width: 10px;
+        margin-left: -10px;
+    }
+
+    &:before {
+        border-color: rgba(#5da5d7, 0);
+        border-top-color: $themeColor;
+        border-width: 13px;
+        margin-left: -13px;
+    }
+
 }

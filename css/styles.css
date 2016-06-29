@@ -77,14 +77,19 @@ main {
 /* Size menu and animation */
 .size {
   position: relative; }
+  .size:hover > .size-choices {
+    opacity: 1;
+    top: -107px;
+    visibility: visible; }
 
 .size-choices {
   opacity: 0;
   position: absolute;
   text-align: center;
   padding: 0 10px;
-  top: -89px;
-  left: -21px;
+  top: -115px;
+  left: -17px;
+  width: 25px;
   border: 3px solid #5CA4D7;
   background-color: #fff;
   font-weight: bold;
@@ -92,119 +97,97 @@ main {
   color: #5CA4D7;
   transition: all 0.3s;
   visibility: hidden; }
-
-.size:hover > .size-choices {
-  opacity: 1;
-  top: -4em;
-  visibility: visible; }
-
-ul.size-choices:after, ul.size-choices:before {
-  top: 100%;
-  left: 50%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none; }
-
-ul.size-choices:after {
-  border-color: rgba(255, 255, 255, 0);
-  border-top-color: #fff;
-  border-width: 10px;
-  margin-left: -10px; }
-
-ul.size-choices:before {
-  border-color: rgba(93, 165, 215, 0);
-  border-top-color: #5CA4D7;
-  border-width: 13px;
-  margin-left: -13px; }
-
-li.l {
-  font-size: 90%; }
-
-li.m {
-  font-size: 70%; }
-
-li.s {
-  font-size: 50%; }
-
-ul.size-choices > li:hover {
-  background: #afd6f6; }
+  .size-choices:after, .size-choices:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
+  .size-choices:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #fff;
+    border-width: 10px;
+    margin-left: -10px; }
+  .size-choices:before {
+    border-color: rgba(93, 165, 215, 0);
+    border-top-color: #5CA4D7;
+    border-width: 13px;
+    margin-left: -13px; }
+  .size-choices .l {
+    font-size: 90%; }
+  .size-choices .m {
+    font-size: 70%; }
+  .size-choices .s {
+    font-size: 50%; }
+  .size-choices > li:hover {
+    background: #afd6f6; }
 
 /* Color menu and animations */
-li.color {
+.color {
   position: relative; }
+  .color:hover > .color-index {
+    opacity: 1;
+    top: -113px;
+    left: -3px;
+    visibility: visible; }
+  .color > li:hover {
+    background-color: #afd6f6; }
 
 ul.color-index {
+  width: 32px;
+  padding-left: 4px;
+  top: -123px;
+  left: -3;
   opacity: 0;
   position: absolute;
   border: 3px solid #5CA4D7;
   background-color: #fff;
-  padding-left: 7px;
-  /*margin: 0;*/
-  top: -112px;
-  left: -2px;
-  width: 100%;
   box-sizing: content-box;
   transition: all 0.3s;
   visibility: hidden; }
-
-.color:hover > .color-index {
-  opacity: 1;
-  bottom: 2em;
-  visibility: visible; }
-
-.color-index li {
-  width: 50%;
-  float: left;
-  padding-top: 0.2em;
-  border: 3px solid #fff; }
-
-ul.color-index:after, ul.color-index:before {
-  top: 100%;
-  left: 50%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none; }
-
-ul.color-index:after {
-  border-color: rgba(255, 255, 255, 0);
-  border-top-color: #fff;
-  border-width: 10px;
-  margin-left: -10px; }
-
-ul.color-index:before {
-  border-color: rgba(93, 165, 215, 0);
-  border-top-color: #5CA4D7;
-  border-width: 13px;
-  margin-left: -13px; }
-
-li.color-blue {
-  width: 1.3em;
-  height: 1.1em;
-  background-color: #7FBAE2; }
-
-li.color-pink {
-  width: 1.3em;
-  height: 1.1em;
-  background-color: #D482AA; }
-
-li.color-yellow {
-  width: 1.3em;
-  height: 1.1em;
-  background-color: #DAAE7B; }
-
-li.color-green {
-  width: 1.3em;
-  height: 1.1em;
-  background-color: #50a169; }
-
-.color > li:hover {
-  background-color: #afd6f6; }
+  ul.color-index:after, ul.color-index:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
+  ul.color-index:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #fff;
+    border-width: 10px;
+    margin-left: -10px; }
+  ul.color-index:before {
+    border-color: rgba(93, 165, 215, 0);
+    border-top-color: #5CA4D7;
+    border-width: 13px;
+    margin-left: -13px; }
+  ul.color-index li {
+    width: 50%;
+    float: left;
+    padding-top: 0.2em;
+    border: 3px solid #fff; }
+  ul.color-index .color-blue {
+    width: 1.3em;
+    height: 1.1em;
+    background-color: #7FBAE2; }
+  ul.color-index .color-pink {
+    width: 1.3em;
+    height: 1.1em;
+    background-color: #D482AA; }
+  ul.color-index .color-yellow {
+    width: 1.3em;
+    height: 1.1em;
+    background-color: #DAAE7B; }
+  ul.color-index .color-green {
+    width: 1.3em;
+    height: 1.1em;
+    background-color: #50a169; }
 
 /* Media Queries - Day 6 Hmwk */
 /* mobile first strategy so build for smallest screen first */
@@ -219,25 +202,22 @@ li.color-green {
     width: 3px;
     height: 6px;
     padding: 6px; }
-
-  ul.color-index {
-    width: 58px;
-    padding-left: 4px;
-    top: -61px;
-    left: -2px; }
+    .color > div:hover > .color-index {
+      bottom: 40px; }
+    .color > div .color-index {
+      width: 58px;
+      padding-left: 4px;
+      top: -61px;
+      left: 2px; }
 
   .size:hover > .size-choices {
-    top: -4.6em; }
-
-  .color:hover > .color-index {
-    bottom: 40px; }
-
-  ul.size-choices {
-    left: -10px; }
+    top: -108px; }
+  .size .size-choices {
+    padding: 0px 7px;
+    left: 0; }
 
   .tshirt-descriptions {
     width: 150px;
-    margin-top: 1em;
     font-size: 17pt; } }
 @media screen and (min-width: 801px) {
   main {
@@ -264,27 +244,24 @@ li.color-green {
     border-right: none;
     float: right; }
 
+  .size:hover > .size-choices {
+    top: -109px; }
+  .size .size-choices {
+    top: -121px;
+    left: -10px; }
+
   .color > div {
     width: 18px;
     height: 18px;
     padding: 0;
     margin-left: 4px; }
-
-  ul.size-choices {
-    top: -121px;
-    left: -10px; }
-
-  .size:hover > .size-choices {
-    top: -109px; }
-
-  ul.color-index {
+  .color .color-index {
     width: 58px;
     padding-left: 5px;
     top: -72px;
     left: -18px; }
-
   .color:hover > .color-index {
-    top: -62px; }
+    top: -61px; }
 
   .tshirt-descriptions {
     width: 190px;
