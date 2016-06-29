@@ -1,0 +1,8 @@
+
+
+//Color Boxes
+@mixin opt-color-boxes($width, $height, $padding) {
+    width: $width;
+    height: $height;
+    padding: $padding;
+}

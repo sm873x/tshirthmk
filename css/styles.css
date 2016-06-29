@@ -19,55 +19,40 @@ main {
   border: 3px solid #5CA4D7;
   border-bottom: none;
   padding: 10px; }
-
-.tshirt-image img {
-  width: 100%;
-  vertical-align: middle; }
+  .tshirt-image img {
+    width: 100%;
+    vertical-align: middle; }
 
 .tshirt-options {
   max-width: 100%; }
 
-ul.options {
+.options {
   margin: 0;
   padding: 0; }
-
-.options > li {
-  float: left;
-  width: 33.3%;
-  padding: 10px;
-  border: 3px solid #5CA4D7;
-  text-align: center;
-  box-sizing: border-box; }
-
-/* Nav Option Hover */
-.options > li:hover {
-  background-color: #5CA4D7;
-  color: white; }
+  .options > li {
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+    border: 3px solid #5CA4D7;
+    text-align: center;
+    box-sizing: border-box; }
+  .options li:hover {
+    background-color: #5CA4D7;
+    color: #fff; }
 
 /* Nav Option CSS Color Box */
-.blue-box {
+.color > div {
   width: 3px;
   height: 6px;
   padding: 6px;
-  background-color: #7FBAE2;
   margin: 1px;
   border: 1px solid #fff; }
-
-.pink-box {
-  width: 3px;
-  height: 6px;
-  padding: 6px;
-  background-color: #D482AA;
-  margin: 1px;
-  border: 1px solid #fff; }
-
-.yellow-box {
-  width: 3px;
-  height: 6px;
-  padding: 6px;
-  background-color: #DAAE7B;
-  margin: 1px;
-  border: 1px solid #fff; }
+.color .blue-box {
+  background-color: #7FBAE2; }
+.color .pink-box {
+  background-color: #D482AA; }
+.color .yellow-box {
+  background-color: #DAAE7B; }
 
 /*Take away double borders*/
 li.refresh, li.heart {
@@ -241,7 +226,7 @@ li.color-green {
   .tshirts-index {
     width: 31%; }
 
-  .blue-box, .pink-box, .yellow-box {
+  .color > div {
     width: 5px;
     height: 4px;
     padding: 7px; }
@@ -296,7 +281,7 @@ li.color-green {
     border-right: none;
     float: right; }
 
-  .blue-box, .pink-box, .yellow-box {
+  .color > div {
     width: 18px;
     height: 18px;
     padding: 0;

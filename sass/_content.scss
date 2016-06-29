@@ -49,33 +49,28 @@
 }
 
 /* Nav Option CSS Color Box */
-.blue-box {
-    width: 3px;
-    height: 6px;
-    padding: 6px;
-    background-color: $colorBlueTshirt;
-    margin: 1px;
-    border: 1px solid #fff;
-}
 
-.pink-box {
-    width: 3px;
-    height: 6px;
-    padding: 6px;
-    background-color: $colorPinkTshirt;
-    margin: 1px;
-    border: 1px solid #fff;
-}
+.color {
 
-.yellow-box {
-    width: 3px;
-    height: 6px;
-    padding: 6px;
-    background-color: $colorYellowTshirt;
-    margin: 1px;
-    border: 1px solid #fff;
-}
+    > div {
+        @include opt-color-boxes(3px, 6px, 6px);
+        margin: $mobColBoxMargin;
+        border: 1px solid #fff;
+        }
 
+    .blue-box {
+        background-color: $colorBlueTshirt;
+    }
+
+    .pink-box {
+        background-color: $colorPinkTshirt;
+    }
+
+    .yellow-box {
+        background-color: $colorYellowTshirt;
+    }
+
+}
 /*Take away double borders*/
 
 li.refresh, li.heart {
