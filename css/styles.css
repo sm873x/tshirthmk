@@ -28,7 +28,8 @@ main {
 
 .options {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  /*Take away double borders*/ }
   .options > li {
     float: left;
     width: 33.3%;
@@ -39,6 +40,13 @@ main {
   .options li:hover {
     background-color: #5CA4D7;
     color: #fff; }
+  .options .refresh, .options .heart {
+    border-right: none;
+    border-bottom: none; }
+  .options .size {
+    border-bottom: none; }
+  .options .color, .options .cart {
+    border-right: none; }
 
 /* Nav Option CSS Color Box */
 .color > div {
@@ -54,19 +62,24 @@ main {
 .color .yellow-box {
   background-color: #DAAE7B; }
 
-/*Take away double borders*/
-li.refresh, li.heart {
-  border-right: none;
-  border-bottom: none; }
+.tshirt-descriptions {
+  padding: 0;
+  width: 115px;
+  text-align: center;
+  margin: 0 auto; }
 
-li.size {
-  border-bottom: none; }
+.name {
+  float: left;
+  font-size: 1; }
 
-li.color, li.cart {
-  border-right: none; }
+.price {
+  float: left;
+  clear: both;
+  font-size: 1em;
+  font-weight: bold; }
 
 /* Size menu and animation */
-li.size {
+.size {
   position: relative; }
 
 .size-choices {
@@ -85,8 +98,6 @@ li.size {
   visibility: hidden; }
 
 .size:hover > .size-choices {
-  /*animation: menu linear 0.3s;*/
-  /*animation-fill-mode: forwards;*/
   opacity: 1;
   top: -4em;
   visibility: visible; }
@@ -144,8 +155,6 @@ ul.color-index {
   visibility: hidden; }
 
 .color:hover > .color-index {
-  /*animation: menu linear 0.3s;
-  animation-fill-mode: forwards;*/
   opacity: 1;
   bottom: 2em;
   visibility: visible; }
@@ -201,22 +210,6 @@ li.color-green {
 .color > li:hover {
   background-color: #afd6f6; }
 
-.tshirt-descriptions {
-  padding: 0;
-  width: 115px;
-  text-align: center;
-  margin: 0 auto; }
-
-.name {
-  float: left;
-  font-size: 1; }
-
-.price {
-  float: left;
-  clear: both;
-  font-size: 1em;
-  font-weight: bold; }
-
 /* Media Queries - Day 6 Hmwk */
 /* mobile first strategy so build for smallest screen first */
 @media screen and (min-width: 481px) and (max-width: 800px) {
@@ -227,9 +220,9 @@ li.color-green {
     width: 31%; }
 
   .color > div {
-    width: 5px;
-    height: 4px;
-    padding: 7px; }
+    width: 3px;
+    height: 6px;
+    padding: 6px; }
 
   ul.color-index {
     width: 58px;
@@ -261,14 +254,11 @@ li.color-green {
   .options > li {
     width: 20%;
     padding: 4px; }
-
-  li.refresh, li.heart, li.size, li.color {
+  .options .refresh, .options .heart, .options .size, .options .color {
     border-right: none; }
-
-  li.refresh, li.heart, li.size {
+  .options .refresh, .options .heart, .options .size {
     border-bottom: 3px solid #5CA4D7; }
-
-  li.cart {
+  .options .cart {
     border-right: 3px solid #5CA4D7; }
 
   .flip {

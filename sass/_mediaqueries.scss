@@ -15,7 +15,7 @@
     }
 
     .color > div {
-        @include opt-color-boxes(5px, 4px, 7px);
+        @include opt-color-boxes($medColBoxWidth, $medColBoxHeight, $medColBoxPadding);
     }
 
     ul.color-index {
@@ -57,21 +57,23 @@
         margin: $largeArticleMargin;
     }
 
-    .options > li {
-        width: $largeOptionsWidth;
-        padding: $largeOptionsPadding;
-    }
+    .options {
+        > li {
+            width: $largeOptionsWidth;
+            padding: $largeOptionsPadding;
+        }
 
-    li.refresh, li.heart, li.size, li.color {
-        border-right: none;
-    }
+        .refresh, .heart, .size, .color {
+            border-right: none;
+        }
 
-    li.refresh, li.heart, li.size {
-        border-bottom: $themeBorder;
-    }
+        .refresh, .heart, .size {
+            border-bottom: $themeBorder;
+        }
 
-    li.cart {
-        border-right: $themeBorder;
+        .cart {
+            border-right: $themeBorder;
+        }
     }
 
     .flip {
@@ -87,7 +89,7 @@
     }
 
     .color > div {
-        @include opt-color-boxes(18px, 18px, 0);
+        @include opt-color-boxes($larColBoxWidth, $larColBoxHeight, $larColBoxPadding);
         margin-left: 4px;
     }
 
