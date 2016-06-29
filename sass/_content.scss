@@ -91,20 +91,17 @@
 
 .tshirt-descriptions {
     padding: 0;
-    width: 115px;
-    text-align: center;
-    margin: 0 auto;
-}
+    width: $mobDesPadding;
 
-.name {
-    float: left;
-    font-size: 1;
-}
+    .name {
+        float: left;
+        font-size: $fontSizeMobDes;
+    }
 
-
-.price {
-    float: left;
-    clear: both;
-    font-size: 1em;
-    font-weight: bold;
+    .price {
+        float: left;
+        clear: both;
+        font-size: $fontSizeMobDes;
+        font-weight: bold;
+    }
 }

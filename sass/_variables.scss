@@ -6,7 +6,7 @@ $hoverFontColor: #fff;
 $colorBlueTshirt: #7FBAE2;
 $colorPinkTshirt: #D482AA;
 $colorYellowTshirt: #DAAE7B;
-$borderOptColBox: 1px solid #fff; 
+$borderOptColBox: 1px solid #fff;
 
 
 //Mobile First
@@ -20,6 +20,8 @@ $mobColBoxWidth: 3px;
 $mobColBoxHeight: 6px;
 $mobColBoxPadding: 6px;
 $mobColBoxMargin: 1px;
+$mobDesPadding: 115px;
+$fontSizeMobDes: 1em;
 
 
 
@@ -32,7 +34,8 @@ $mediumArticleWidth: 31%;
 $medColBoxWidth: 3px;
 $medColBoxHeight: 6px;
 $medColBoxPadding: 6px;
-
+$medDesPadding: 150px;
+$fontSizeMedDes: 17pt;
 
 
 //Large Displays
@@ -44,3 +47,5 @@ $largeOptionsPadding: 4px;
 $larColBoxWidth: 18px;
 $larColBoxHeight: 18px;
 $larColBoxPadding: 0;
+$larDesPadding: 190px;
+$fontSizeLarDes: 16pt;

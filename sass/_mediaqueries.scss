@@ -33,14 +33,14 @@
         bottom: 40px;
     }
 
-    .tshirt-descriptions {
-        width: 150px;
-        margin-top: 1em;
-        font-size: 17pt;
-    }
-
     ul.size-choices {
         left: -10px;
+    }
+
+    .tshirt-descriptions {
+        width: $medDesPadding;
+        margin-top: 1em;
+        font-size: $fontSizeMedDes;
     }
 
 }
@@ -74,18 +74,15 @@
         .cart {
             border-right: $themeBorder;
         }
-    }
 
-    .flip {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    li.flip {
-        border-top: none;
-        border-right: none;
-        float: right;
+        .flip {
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-top: none;
+            border-right: none;
+            float: right;
+        }
     }
 
     .color > div {
@@ -114,17 +111,17 @@
     }
 
     .tshirt-descriptions {
-        width: 190px;
+        width: $larDesPadding;
         position: relative;
-    }
 
-    .name, .price {
-        font-size: 16pt;
-    }
+        .name, .price {
+            font-size: $fontSizeLarDes;
+        }
 
-    .price {
-        float: right;
-        clear: right;
+        .price {
+            float: right;
+            clear: right;
+        }
     }
 
 }
